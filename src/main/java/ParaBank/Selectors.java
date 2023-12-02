@@ -8,7 +8,7 @@ public interface Selectors {
 
     public String passwordInput = "[type='password']";
     //automatically generates a random user for multiple tests
-    public String userName = "ikenna12"+ para.int_random;
+    public String userName = "ikenna"+ para.int_random+ para.int_random;
     public String password = "judas22";
 
     public String login = "[type='submit']";
@@ -31,7 +31,7 @@ public interface Selectors {
 
     public String confirmMessageTitle = "h1";
 
-    public String ConfirmMessageTxt = "Welcome " + userName;
+    public String [] ConfirmMessageTxt = {"Welcome " + userName, "Accounts Overview"};
 
     //login credentials
     public String getFirstName = "uchenna";
@@ -42,4 +42,6 @@ public interface Selectors {
     String getCity = "Lagos";
     String getSsn = "3452662";
     String getPhoneNumber = "+23478976768879";
+    //logout
+    String logout = "[href='/parabank/logout.htm']";
 }

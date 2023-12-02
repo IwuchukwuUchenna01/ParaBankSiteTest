@@ -47,12 +47,12 @@ public class ParaBankObjects {
         driver.findElement(By.cssSelector(Selectors.submitButton)).click();
 
     }
-    /*public void accountLogin(){
+    public void accountLogin(){
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(Selectors.userNameInput)));
         driver.findElement(By.cssSelector(Selectors.userNameInput)).sendKeys(Selectors.userName);
         driver.findElement(By.cssSelector(Selectors.passwordInput)).sendKeys(Selectors.password);
         driver.findElement(By.cssSelector(Selectors.login)).click();
-    }*/
+    }
     public void verifySuccess(String element,String originalText){
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(element)));
         WebElement verifiableElement = driver.findElement(By.cssSelector(element));
@@ -60,9 +60,15 @@ public class ParaBankObjects {
         Assert.assertEquals(originalText,verifiableText);
 
     }
+    public void logOut(){
+        driver.findElement(By.cssSelector(Selectors.logout)).click();
+    }
 
     public void verifySignUp(){
-        verifySuccess(Selectors.confirmMessageTitle,Selectors.ConfirmMessageTxt);
+        verifySuccess(Selectors.confirmMessageTitle,Selectors.ConfirmMessageTxt[0]);
+    }
+    public void verifyLogin(){
+        verifySuccess(Selectors.confirmMessageTitle, Selectors.ConfirmMessageTxt[1]);
     }
     public void tearDown(){
         driver.quit();

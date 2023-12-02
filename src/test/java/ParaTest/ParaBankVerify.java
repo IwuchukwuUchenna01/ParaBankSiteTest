@@ -16,13 +16,17 @@ public class ParaBankVerify {
         banks.setUp();
     }
 
-    @Test (priority = 0)
-    @Description("User account registration successful with success response")
+    @Test
+    @Description("User account registration successful with success response\n" +
+            "successfully logged in User\n" +
+            "Successfully confirmed 'account overview'")
     public void registerUser() {
         banks.accountRegistration();
-        banks.verifySuccess(Selectors.confirmMessageTitle, Selectors.ConfirmMessageTxt);
+        banks.verifySignUp();
+        banks.logOut();
+        banks.accountLogin();
+        banks.verifyLogin();
     }
-
     @AfterTest
     public void closePage() {
         banks.tearDown();
