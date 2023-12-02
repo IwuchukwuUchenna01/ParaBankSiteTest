@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Dec 02 11:22:58 WAT 2023","Sat Dec 02 11:23:00 WAT 2023","1966","All Test Suite","C:/Users/Support/Desktop/ParaBank","ParaTest.ParaBankVerify","ParaTest.ParaBankVerify","registerUser","registerUser","user account registration"
