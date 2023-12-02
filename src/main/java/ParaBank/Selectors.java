@@ -7,7 +7,7 @@ public interface Selectors {
 
     public String passwordInput = "[type='password']";
 
-    public String userName = "uche12";
+    public String userName = "ike12";
     public String password = "judas22";
 
     public String login = "[type='submit']";
@@ -30,7 +30,7 @@ public interface Selectors {
 
     public String confirmMessageTitle = "h1";
 
-    public String ConfirmMessageTxt = "welcome"+ userName;
+    public String ConfirmMessageTxt = "Welcome "+ userName;
 
 
 
