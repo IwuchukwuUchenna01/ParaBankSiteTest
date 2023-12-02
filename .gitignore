@@ -40,3 +40,4 @@ build/
 ### Allure artifacts ###
 .idea
 allure-results
+allure-report

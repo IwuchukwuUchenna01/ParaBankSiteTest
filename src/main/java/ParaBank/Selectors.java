@@ -1,13 +1,14 @@
 package ParaBank;
 
+
 public interface Selectors {
+    ParaBankObjects para = new ParaBankObjects();
     public String siteUrl = "https://parabank.parasoft.com/parabank/index.htm";
-    public String register = "[href='register.htm;jsessionid=DFCB49753B442331BFE85790700C7FA8']";
     public String userNameInput = "[type='text']";
 
     public String passwordInput = "[type='password']";
-
-    public String userName = "ikem12";
+    //automatically generates a random user for multiple tests
+    public String userName = "ikenna12"+ para.int_random;
     public String password = "judas22";
 
     public String login = "[type='submit']";
@@ -22,7 +23,7 @@ public interface Selectors {
     public String zipCode = "customer.address.zipCode";
     public String phoneNumber = "customer.phoneNumber";
     public String ssn = "customer.ssn";
-    public String UserNameReg =  "customer.username";
+    public String UserNameReg = "customer.username";
     public String passwordReg = "customer.password";
 
     public String confirmPasswordReg = "repeatedPassword";
@@ -30,9 +31,9 @@ public interface Selectors {
 
     public String confirmMessageTitle = "h1";
 
-    public String ConfirmMessageTxt = "Welcome "+ userName;
+    public String ConfirmMessageTxt = "Welcome " + userName;
 
-//login credentials
+    //login credentials
     public String getFirstName = "uchenna";
     public String getLastName = "iwuchukwu";
     String getStreet = "25 ilupeju street";

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
+import java.util.Random;
 
 import java.time.Duration;
 
@@ -17,6 +17,12 @@ public class ParaBankObjects {
     WebDriverWait wait;
 
     WebElement element;
+
+    Random rand = new Random();
+    int upperbound = 25;
+    // Generating random values from 0 - 24
+    // using nextInt()
+    int int_random = rand.nextInt(upperbound);
 
     public  void setUp(){
         driver = new ChromeDriver();
