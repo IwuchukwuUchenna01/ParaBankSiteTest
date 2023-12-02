@@ -26,11 +26,11 @@ public interface Selectors {
     public String passwordReg = "customer.password";
 
     public String confirmPasswordReg = "repeatedPassword";
-    public String submitButton = "[class='button']";
+    public String submitButton = "[value='Register']";
 
     public String confirmMessageTitle = "h1";
 
-    public String ConfirmMessageTxt = "ParaSoft Demo Website";
+    public String ConfirmMessageTxt = "welcome oreoluwa12";
 
 
 
