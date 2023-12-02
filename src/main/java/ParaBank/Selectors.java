@@ -30,7 +30,7 @@ public interface Selectors {
 
     public String confirmMessageTitle = "h1";
 
-    public String ConfirmMessageTxt = "welcome oreoluwa12";
+    public String ConfirmMessageTxt = "ParaSoft Demo Website";
 
 
 
