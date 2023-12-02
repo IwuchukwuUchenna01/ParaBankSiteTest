@@ -1,6 +1,7 @@
 package ParaTest;
 
 import ParaBank.ParaBankObjects;
+import ParaBank.Selectors;
 import io.qameta.allure.Description;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -16,6 +17,7 @@ public class ParaBankVerify {
     @Description("user account registration")
     public void registerUser(){
         banks.accountRegistration();
+        banks.verifySuccess();
     }
     @AfterTest
     public void closePage(){

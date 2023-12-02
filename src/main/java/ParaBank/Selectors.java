@@ -28,7 +28,9 @@ public interface Selectors {
     public String confirmPasswordReg = "repeatedPassword";
     public String submitButton = "[class='button']";
 
-    public String presenceText = "[class='title']";
+    public String confirmMessageTitle = "h1";
+
+    public String ConfirmMessageTxt = "welcome oreoluwa12";
 
 
 

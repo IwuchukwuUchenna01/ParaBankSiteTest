@@ -47,20 +47,19 @@ public class ParaBankObjects {
         driver.findElement(By.cssSelector(Selectors.passwordInput)).sendKeys(Selectors.password);
         driver.findElement(By.cssSelector(Selectors.login)).click();
     }
-    /*public void verifySuccess(String element){
-        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(element)));
-        WebElement verified = driver.findElement(By.cssSelector(element));
-        String verifiedText = verified.getText();
-        Assert.
-    }*/
+    public void verifySuccess(String element,String originalText){
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(element)));
+        WebElement verifiableElement = driver.findElement(By.cssSelector(element));
+        String verifiableText = verifiableElement.getText();
+        Assert.assertEquals(originalText,verifiableText);
+
+    }
+
+    public void verifySignUp(){
+        verifySuccess(Selectors.confirmMessageTitle,Selectors.ConfirmMessageTxt);
+    }
     public void tearDown(){
         driver.quit();
     }
-    public static void main(String [] args){
-        ParaBankObjects bank = new ParaBankObjects();
-        bank.setUp();
-        bank.accountRegistration();
-        //bank.tearDown();
-        //bank.accountLogin();
-    }
+
 }
