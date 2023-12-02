@@ -27,26 +27,26 @@ public class ParaBankObjects {
     public void accountRegistration(){
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(Selectors.userNameInput)));
         driver.findElement(By.linkText("Register")).click();
-        driver.findElement(By.id(Selectors.firstName)).sendKeys("uchenna");
-        driver.findElement(By.id(Selectors.lastName)).sendKeys("iwuchukwu");
-        driver.findElement(By.id(Selectors.street)).sendKeys("25 ilupeju street");
-        driver.findElement(By.id(Selectors.city)).sendKeys("Lagos");
-        driver.findElement(By.id(Selectors.state)).sendKeys("Lagos");
-        driver.findElement(By.id(Selectors.zipCode)).sendKeys("12345");
-        driver.findElement(By.id(Selectors.phoneNumber)).sendKeys("+23456789053678");
-        driver.findElement(By.id(Selectors.ssn)).sendKeys("22345");
+        driver.findElement(By.id(Selectors.firstName)).sendKeys(Selectors.getFirstName);
+        driver.findElement(By.id(Selectors.lastName)).sendKeys(Selectors.getLastName);
+        driver.findElement(By.id(Selectors.street)).sendKeys(Selectors.getStreet);
+        driver.findElement(By.id(Selectors.city)).sendKeys(Selectors.getCity);
+        driver.findElement(By.id(Selectors.state)).sendKeys(Selectors.getState);
+        driver.findElement(By.id(Selectors.zipCode)).sendKeys(Selectors.getZipCode);
+        driver.findElement(By.id(Selectors.phoneNumber)).sendKeys(Selectors.getPhoneNumber);
+        driver.findElement(By.id(Selectors.ssn)).sendKeys(Selectors.getSsn);
         driver.findElement(By.id(Selectors.UserNameReg)).sendKeys(Selectors.userName);
         driver.findElement(By.id(Selectors.passwordReg)).sendKeys(Selectors.password);
         driver.findElement(By.id(Selectors.confirmPasswordReg)).sendKeys(Selectors.password);
         driver.findElement(By.cssSelector(Selectors.submitButton)).click();
 
     }
-    public void accountLogin(){
+    /*public void accountLogin(){
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(Selectors.userNameInput)));
         driver.findElement(By.cssSelector(Selectors.userNameInput)).sendKeys(Selectors.userName);
         driver.findElement(By.cssSelector(Selectors.passwordInput)).sendKeys(Selectors.password);
         driver.findElement(By.cssSelector(Selectors.login)).click();
-    }
+    }*/
     public void verifySuccess(String element,String originalText){
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(element)));
         WebElement verifiableElement = driver.findElement(By.cssSelector(element));

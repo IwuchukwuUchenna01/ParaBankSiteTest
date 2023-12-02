@@ -7,7 +7,7 @@ public interface Selectors {
 
     public String passwordInput = "[type='password']";
 
-    public String userName = "ike12";
+    public String userName = "ikem12";
     public String password = "judas22";
 
     public String login = "[type='submit']";
@@ -32,9 +32,13 @@ public interface Selectors {
 
     public String ConfirmMessageTxt = "Welcome "+ userName;
 
-
-
-
-
-
+//login credentials
+    public String getFirstName = "uchenna";
+    public String getLastName = "iwuchukwu";
+    String getStreet = "25 ilupeju street";
+    String getState = "Lagos";
+    String getZipCode = "234564";
+    String getCity = "Lagos";
+    String getSsn = "3452662";
+    String getPhoneNumber = "+23478976768879";
 }
