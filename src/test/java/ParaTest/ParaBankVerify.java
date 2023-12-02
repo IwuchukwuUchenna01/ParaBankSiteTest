@@ -17,7 +17,7 @@ public class ParaBankVerify {
     @Description("user account registration")
     public void registerUser(){
         banks.accountRegistration();
-        banks.verifySuccess();
+        banks.verifySuccess(Selectors.confirmMessageTitle,Selectors.ConfirmMessageTxt);
     }
     @AfterTest
     public void closePage(){
