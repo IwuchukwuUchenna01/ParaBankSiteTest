@@ -1,1 +1,1 @@
-{"af5401b381588354fd1b902a6c1bef52":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"f35dd90736423fd5","status":"passed","time":{"start":1701515259727,"stop":1701515262492,"duration":2765}}]}}
+{"af5401b381588354fd1b902a6c1bef52":{"statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"f593e315b5841d2b","status":"failed","statusDetails":"expected [Welcome oreoluwa12] but found [oreoluwa Welcomw]","time":{"start":1701516206157,"stop":1701516209522,"duration":3365}}]}}
